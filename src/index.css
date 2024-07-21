@@ -1,3 +1,72 @@
+/* for logo font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'poppins';
+}
+
+/* navbar addtional styles */
+.navbar-header-logo ,#home-text-1,#home-text-2{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+ 
+}
+
+/* typing animation */
+
+#typing-text-home {
+  height:4em;
+  overflow:hidden;
+  width: max-content;
+}
+#typing-text-home  > p {
+  padding: 0.25rem 0.75rem;
+  height:4rem;
+  width: max-content;
+  margin-bottom: 1.6rem;
+  display:inline-block;
+  display: flex;
+  align-items: center;
+}
+
+#typing-text-home p:nth-child(1){
+  animation: text-animation 5s infinite;
+}
+/* #typing-text-home p:nth-child(2){
+  animation: text-animation 10s infinite;
+} */
+
+#typing-text-home  p:nth-child(1) {
+  background-color:#20a7d8;
+}
+#home-text-2 {
+  background-color:#CD921E;
+}
+
+
+@keyframes text-animation {
+
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
