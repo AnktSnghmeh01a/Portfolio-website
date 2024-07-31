@@ -3,7 +3,7 @@ import handImg from "../../assets/contactus-assert.webp";
 import { useDarkMode } from "../darkMode/DarkMode";
 import { sendCustomEmail } from "../Email/EmailJs";
 import { Fade,Roll,Zoom} from "react-awesome-reveal";
-import toast from "react-hot-toast";
+
 
 const ContactUs = () => {
   const [details, setDetail] = useState({

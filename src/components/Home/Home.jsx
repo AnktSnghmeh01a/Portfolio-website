@@ -8,9 +8,9 @@ import Skills from "../Skills/Skills.jsx";
 import Projects from "../Projects/Projects.jsx";
 import { HashLink } from "react-router-hash-link";
 import Education from "../Education/Education.jsx";
-import { Fade, Flip, Bounce } from "react-awesome-reveal";
+import { Fade, Bounce } from "react-awesome-reveal";
 const Home = () => {
-  const { dark, toggleDarkMode } = useDarkMode();
+  const { dark } = useDarkMode();
 
   return (
     <>

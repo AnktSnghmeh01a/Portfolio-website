@@ -2,7 +2,7 @@ import React from "react";
 import profileImg from "../.././assets/about-assert.jpeg";
 import { useDarkMode } from "../darkMode/DarkMode.jsx";
 import { HashLink } from "react-router-hash-link";
-import { Fade,Slide,Roll,Bounce} from "react-awesome-reveal";
+import { Fade,Slide,Roll} from "react-awesome-reveal";
 
 const About = () => {
   const { dark } = useDarkMode();

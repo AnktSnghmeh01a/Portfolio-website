@@ -8,7 +8,6 @@ import { Toaster } from "react-hot-toast";
 
 const App = () => {
 
-  const {dark} = useDarkMode();
   const [loading,setLoading] = useState(true);
   
   useEffect(()=>{

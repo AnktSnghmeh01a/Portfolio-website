@@ -5,7 +5,7 @@ import {
   tools,
 } from "../../SkillsData/skillsData.js";
 import { useDarkMode } from "../darkMode/DarkMode";
-import { Fade, Flip, Bounce, Hinge, Slide, Roll ,Rotate } from "react-awesome-reveal";
+import {  Slide ,Rotate } from "react-awesome-reveal";
 
 const Skills = () => {
   const { dark } = useDarkMode();

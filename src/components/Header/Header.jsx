@@ -6,7 +6,6 @@ import { RxCross1 } from "react-icons/rx";
 
 
 import { useDarkMode } from "../darkMode/DarkMode.jsx";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
