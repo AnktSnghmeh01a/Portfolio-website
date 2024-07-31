@@ -1,6 +1,7 @@
 /* for logo font */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +10,25 @@
 *{
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
 }
 
 body{
@@ -22,7 +41,7 @@ body{
 .navbar-header-logo ,#home-text-1,#home-text-2{
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
- 
+  
 }
 
 /* typing animation */
@@ -70,3 +89,8 @@ body{
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 }
+
+.top-project-part h1,.bottom-project-part h1{
+  transform: translate(-50%,-50%);
+}
+
