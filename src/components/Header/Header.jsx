@@ -33,10 +33,10 @@ const Header = () => {
 
       <div
         className = {`max-[737px]:rounded-none nav-links flex h-full rounded-full max-[737px]:flex-col max-[737px]:h-fit max-[737px]:w-full max-[737px]:mt-28 max-[737px]:mb-10 max-[737px]:items-center max-[737px]:justify-center  max-[737px]:gap-0 ${menu?'max-[737px]:opacity-0':'max-[737px]:opacity-1'} ${menu?'max-[737px]:pointer-events-none':'max-[737px]:pointer-events-all'} 
-       min-[737px]:bg-[rgba(255,_255,_255,_0.45)] min-[737px]:backdrop-filter min-[737px]:backdrop-blur-[10px] min-[737px]:border-[1px] min-[737px]:border-solid min-[737px]:border-[rgba(255,255,255,.25)] min-[737px]:overflow-hidden min-[737px]:ml-10`}     
+       min-[737px]:bg-[rgba(255,_255,_255,_0.45)] min-[737px]:backdrop-filter min-[737px]:backdrop-blur-[10px] min-[737px]:border-[1px] min-[737px]:border-solid min-[737px]:border-[rgba(255,255,255,.25)] min-[737px]:overflow-hidden min-[737px]:ml-10 `}     
         id="nav-links"
       >
-        <HashLink to={"/#home"} className="rounded-l-2xl font-normal h-full p-3 text-white bg-gradient-to-r from-purple-500 to-pink-500  dark:text-black px-7 dark:hover:bg-slate-200 max-[737px]:bg-white max-[737px]:text-black max-[737px]:w-full max-[737px]:h-13 max-[737px]:text-center max-[737px]:hover:bg-black max-[737px]:hover:text-white dark:max-[737px]:hover:bg-white dark:max-[737px]:hover:text-black max-[737px]:rounded-2xl dark:max-[737px]:bg-black dark:max-[737px]:text-white max-[737px]:pt-2 max-[737px]:gap-2 transition ease-in-out duration-150 cursor-pointer" onClick={()=>showLinksMenu()}>
+        <HashLink to={"/#home"} className="rounded-l-2xl font-normal h-full p-3 text-white bg-gradient-to-r from-purple-500 to-pink-500  dark:text-black px-7 dark:hover:bg-slate-200 max-[737px]:bg-white max-[737px]:text-black max-[737px]:w-full max-[737px]:h-13 max-[737px]:text-center max-[737px]:hover:bg-black max-[737px]:hover:text-white dark:max-[737px]:hover:bg-white dark:max-[737px]:hover:text-black max-[737px]:rounded-2xl dark:max-[737px]:bg-black dark:max-[737px]:text-white max-[737px]:gap-2 transition ease-in-out duration-150 cursor-pointer border" onClick={()=>showLinksMenu()}>
           Home
         </HashLink>
 

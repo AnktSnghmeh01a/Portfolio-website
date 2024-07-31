@@ -20,13 +20,14 @@ const Home = () => {
           dark
             ? "bg-gradient-to-r from-zinc-700 to-slate-900"
             : "bg-gradient-to-r from-indigo-600 to-fuchsia-500"
-        } p-3 max-[737px]:flex-col-reverse max-[737px]:justify-items-center pt-20 overflow-hidden relative`}
+        } p-3 max-[737px]:flex-col-reverse max-[737px]:justify-items-center pt-20 overflow-hidden relative  max-[737px]:pb-10`}
         id="home"
       >
         <CustomCursor/>
+     
         {/* left-portion-home */}
-        <div className="left-portion-home  w-1/2 flex flex-col p-10 gap-16 max-[737px]:w-full">
-          <div className="text-portion-home flex flex-col pt-20 gap-3 max-[737px]:pt-5 max-[737px]:justify-items-center">
+        <div className="left-portion-home  w-1/2 flex flex-col p-10 gap-16 max-[737px]:w-full max-[737px]:p-4 max-[737px]:items-center">
+          <div className="text-portion-home flex flex-col pt-20 gap-3 max-[737px]:pt-5 max-[737px]:justify-items-center max-[737px]:w-full">
             <Fade cascade>
               <h1 className="text-white text-4xl">
                 Hello ,
@@ -34,20 +35,21 @@ const Home = () => {
                   I am
                 </span>
               </h1>
-              <h1 className="text-white text-5xl max-[737px]:text-4xl dark:text-white max-[737px]:dark:text-white max-[737px]:font-medium ">
+              <h1 className="text-white text-5xl max-[737px]:text-4xl max-[400px]:text-3xl dark:text-white max-[737px]:dark:text-white max-[737px]:font-medium ">
                 Ankit Singh Mehra
               </h1>
             </Fade>
 
             <div className="mt-3 typing-text-home" id="typing-text-home">
               <p
-                className="text-3xl text-white max-[737px]:text-2xl bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg"
+                className=" text-white  max-[737px]:text-xl  
+             bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg text-3xl"
                 id="home-text-1"
               >
                 Front-End Developer
               </p>
               <p
-                className="text-white text-3xl max-[737px]:text-2xl bg-gradient-to-r from-violet-500 to-zinc-400 rounded-lg"
+                className="text-white text-3xl max-[737px]:text-xl bg-gradient-to-r from-violet-500 to-zinc-400 rounded-lg"
                 id="home-text-2"
               >
                 Full-Stack Developer
@@ -56,7 +58,7 @@ const Home = () => {
           </div>
 
           {/* buttons */}
-          <div className="buttons-home flex gap-4">
+          <div className="buttons-home flex gap-4 max-[737px]:gap-6 max-[737px]:w-full ">
             <HashLink to={"#contactus"}>
               {" "}
               <button className="bg-gradient-to-r from-pink-300 via-purple-500 to-purple-800 p-3 rounded-lg px-10 text-white hover:from-pink-500 hover:to-yellow-500 max-[737px]:px-4 hover:scale-90 transition-all duration-500 ease-in-out">
@@ -65,7 +67,7 @@ const Home = () => {
             </HashLink>
 
             <HashLink to={"#about"}>
-              <button className="border-2 border-purple-400 p-3 rounded-lg text-white font-normal px-10 hover:bg-gradient-to-r from-purple-500 to-pink-500 max-[737px]:px-4 hover:scale-90 transition-all duration-500 ease-in-out">
+              <button className="border-2 border-purple-400 p-3 rounded-lg text-white font-normal px-10 hover:bg-gradient-to-r from-purple-500 to-pink-500 max-[737px]:px-4  hover:scale-90 transition-all duration-500 ease-in-out">
                 About me
               </button>
             </HashLink>
