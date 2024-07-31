@@ -9,6 +9,7 @@ import Projects from "../Projects/Projects.jsx";
 import { HashLink } from "react-router-hash-link";
 import Education from "../Education/Education.jsx";
 import { Fade, Bounce } from "react-awesome-reveal";
+import CustomCursor from "../customCursor/CustomCursor.jsx";
 const Home = () => {
   const { dark } = useDarkMode();
 
@@ -19,9 +20,10 @@ const Home = () => {
           dark
             ? "bg-gradient-to-r from-zinc-700 to-slate-900"
             : "bg-gradient-to-r from-indigo-600 to-fuchsia-500"
-        } p-3 max-[737px]:flex-col-reverse max-[737px]:justify-items-center pt-20 overflow-hidden`}
+        } p-3 max-[737px]:flex-col-reverse max-[737px]:justify-items-center pt-20 overflow-hidden relative`}
         id="home"
       >
+        <CustomCursor/>
         {/* left-portion-home */}
         <div className="left-portion-home  w-1/2 flex flex-col p-10 gap-16 max-[737px]:w-full">
           <div className="text-portion-home flex flex-col pt-20 gap-3 max-[737px]:pt-5 max-[737px]:justify-items-center">
