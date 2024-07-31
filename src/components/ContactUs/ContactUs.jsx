@@ -62,7 +62,7 @@ const ContactUs = () => {
       <div className="right-part-contactus min-h-full flex justify-end items-center w-1/2 max-[930px]:w-full max-[930px]:justify-center max-[930px]:mt-10">
 
         <form
-          className="p-4 flex justify-center flex-col gap-8 h-1/2 w-5/6 "
+          className="p-4 flex justify-center flex-col gap-8 h-1/2 w-5/6 max-[930px]:w-full"
           onSubmit={handlesendEmail}
         >
 
@@ -117,12 +117,13 @@ const ContactUs = () => {
           </div> </Fade>
        
 
-          <div className="button flex justify-start mt-5 ml-10 max-[930px]:ml-0 max-[930px]:justify-center">
+          <div className="button flex justify-start mt-5 ml-10 max-[930px]:ml-0 max-[930px]:justify-center max-[500px]:w-full">
             <button
               type="submit"
-              className="border px-28 py-2 rounded-xl text-white transition-all duration-500 ease-in-out text-lg font-normal hover:bg-gradient-to-r from-red-400 to-fuchsia-500 hover:scale-90 cursor-pointer "
-              // disabled={!details.name || !details.eMail || !details.message}
-                        
+
+              className="border w-5/6 py-2  rounded-xl text-white transition-all duration-500 ease-in-out text-lg font-normal hover:bg-gradient-to-r from-red-400 to-fuchsia-500 hover:scale-90 cursor-pointer"
+
+            
            >
               Send
             </button>
