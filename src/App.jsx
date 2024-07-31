@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header/Header.jsx";
 import Home from "./components/Home/Home.jsx";
 import { Route,BrowserRouter as Router, Routes } from "react-router-dom";
-import { useDarkMode } from "./components/darkMode/DarkMode.jsx";
 import Loading from "./components/loading/Loading.jsx";
 import { Toaster } from "react-hot-toast";
 
