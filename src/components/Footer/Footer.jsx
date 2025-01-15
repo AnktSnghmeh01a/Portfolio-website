@@ -6,7 +6,7 @@ import { useDarkMode } from '../darkMode/DarkMode';
 const Footer = () => {
   const {dark} = useDarkMode()
   return (
-    <div className = {`min-h-1/4 w-full ${dark?'bg-gradient-to-r from-zinc-700 to-slate-900':'bg-gradient-to-r from-violet-600 to-fuchsia-500'}  flex flex-col justify-center items-center gap-4 py-6`}>
+    <div className = {`min-h-full w-full ${dark?'bg-gradient-to-r from-zinc-700 to-slate-900':'bg-[#EBEBEB]'}  flex flex-col justify-center items-center gap-10 p-6 `}>
       
       <div className="social-media-links w-full justify-center items-center flex gap-7">
          
@@ -24,17 +24,25 @@ const Footer = () => {
        
         </div>  
    
-       <div className="nav-links flex gap-4 text-white font-normal">
-        <HashLink to={"#home"} className='hover:underline hover:text-black'>Home</HashLink>
-        <HashLink to={"#about"} className='hover:underline  hover:text-black'>About</HashLink>
-        <HashLink to={"#skills"} className='hover:underline  hover:text-black'>Skills</HashLink>
-        <HashLink to={"#projects"} className='hover:underline  hover:text-black'>Projects</HashLink>
-        <HashLink to={"#education"} className='hover:underline  hover:text-black'>Education</HashLink>
+       <div className="nav-links flex gap-6 text-[#878787]  dark:text-white font-normal text-lg max-[737px]:gap-3"> 
+
+           <HashLink to={"#home"} className='hover:underline hover:text-black text-lg max-[737px]:text-sm'>Home</HashLink> 
+
+           <HashLink to={"#about"} className='hover:underline hover:text-black 
+           text-lg max-[737px]:text-sm'>About</HashLink> 
+   
+           <HashLink to={"#skills"} className='hover:underline  hover:text-black text-lg max-[737px]:text-sm'>Skills</HashLink>   
+       
+           <HashLink to={"#projects"} className='hover:underline  hover:text-black text-lg max-[737px]:text-sm'>Projects</HashLink>   
+       
+           <HashLink to={"#education"} className='hover:underline  hover:text-black text-lg max-[737px]:text-sm'>Education</HashLink>  
 
        </div>
 
-     <p className='font-normal text-white cursor-pointer'>Made with <span className="hover:scale-75">❤️ </span>by Ankit</p>
-     </div>
+     <p className='font-normal text-[#878787]  dark:text-white cursor-pointer text-lg max-[737px]:text-sm'>Made with <span className="hover:scale-75">❤️ </span>by Ankit</p>
+     
+       </div>
+
   )
 }
 

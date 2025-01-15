@@ -6,7 +6,7 @@ const Project = ({ projectName, projectImage, githubLink,liveLink }) => {
 
   return (
     <div
-      className={`w-96 h-96 flex flex-col align-center gap-3 p-3 max-[737px]:m-0 rounded-xl py-5 shadow-sm shadow-white cursor-pointer bg-[rgba(255,_255,_255,_0.45)] backdrop-filter backdrop-blur-[10px] border-[1px] border-solid border-[rgba(255,255,255,.25)] max-[737px]:w-80 max-[737px]:h-80 m-5`}
+      className={`w-96 h-96 flex flex-col align-center gap-3 p-3 bg-[#A2A2A2] max-[737px]:m-0 rounded-xl py-5 shadow-sm shadow-white cursor-pointer backdrop-filter backdrop-blur-[10px] border-[1px] border-solid border-[rgba(255,255,255,.25)] max-[737px]:w-80 max-[737px]:h-80 m-5`}
     >
       <div className="image-container w-full h-80 border rounded-xl overflow-hidden">
         <img
@@ -17,7 +17,7 @@ const Project = ({ projectName, projectImage, githubLink,liveLink }) => {
       </div>
 
       <div className="text-part-project w-full">
-        <h1 className="text-black text-center font-normal">{projectName}</h1>
+        <h1 className="text-white text-center font-normal">{projectName}</h1>
       </div>
 
       {/* buttons */}
@@ -39,11 +39,7 @@ const Project = ({ projectName, projectImage, githubLink,liveLink }) => {
 {/* live link */}
         <a href={liveLink} target="_blank">
           <button
-            className={`px-14 py-2 rounded-lg border transition-all duration-300 ease-in-out hover:scale-90 ${
-              dark ? "border-white" : "border-black"
-            } ${
-              dark ? "text-white" : "text-black"
-            } hover:bg-gradient-to-r from-fuchsia-500 to-orange-500 max-[737px]:px-12`}
+            className={`px-14 py-2 rounded-lg border transition-all duration-300 ease-in-out hover:scale-90 text-white border-white hover:bg-gradient-to-r from-fuchsia-500 to-orange-500 max-[737px]:px-12`}
           >
             Live
           </button>

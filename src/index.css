@@ -10,7 +10,8 @@
 *{
   margin: 0;
   padding: 0;
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
+
 }
 ::-webkit-scrollbar-track
 {
@@ -37,15 +38,17 @@ body{
   font-family: 'poppins';
 }
 
+#about {
+  scroll-margin-top: 80px; /* Adjust based on header height */
+}
+
+
 /* navbar addtional styles */
 .navbar-header-logo ,#home-text-1,#home-text-2{
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
   
 }
-
-/* typing animation */
-
 #typing-text-home {
   height:4em;
   overflow:hidden;
@@ -69,10 +72,10 @@ body{
 } */
 
 #typing-text-home  p:nth-child(1) {
-  background-color:#20a7d8;
+  /* background-color:#20a7d8; */
 }
 #home-text-2 {
-  background-color:#CD921E;
+  /* background-color:#CD921E; */
 }
 
 

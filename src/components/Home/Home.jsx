@@ -8,7 +8,6 @@ import Skills from "../Skills/Skills.jsx";
 import Projects from "../Projects/Projects.jsx";
 import { HashLink } from "react-router-hash-link";
 import Education from "../Education/Education.jsx";
-import { Fade, Bounce } from "react-awesome-reveal";
 import CustomCursor from "../customCursor/CustomCursor.jsx";
 const Home = () => {
   const { dark } = useDarkMode();
@@ -19,7 +18,7 @@ const Home = () => {
         className={`w-full min-h-full flex ${
           dark
             ? "bg-gradient-to-r from-zinc-700 to-slate-900"
-            : "bg-gradient-to-r from-indigo-600 to-fuchsia-500"
+            : "bg-[#EBEBEB]"
         } p-3 max-[737px]:flex-col-reverse max-[737px]:justify-items-center pt-20 overflow-hidden relative  max-[737px]:pb-10`}
         id="home"
       >
@@ -28,28 +27,28 @@ const Home = () => {
         {/* left-portion-home */}
         <div className="left-portion-home  w-1/2 flex flex-col p-10 gap-16 max-[737px]:w-full max-[737px]:p-4 max-[737px]:items-center">
           <div className="text-portion-home flex flex-col pt-20 gap-3 max-[737px]:pt-5 max-[737px]:justify-items-center max-[737px]:w-full">
-            <Fade cascade>
-              <h1 className="text-white text-4xl">
+
+              <h1 className="text-[#36454F]  text-5xl dark:text-white">
                 Hello ,
-                <span className="text-purple-300 dark:text-gray-200">
+                <span className="text-[#808080] dark:text-[#F9F6EE] border-black">
                   I am
                 </span>
               </h1>
-              <h1 className="text-white text-5xl max-[737px]:text-4xl max-[400px]:text-3xl dark:text-white max-[737px]:dark:text-white max-[737px]:font-medium ">
+              <h1 className="text-[#36454F] text-5xl max-[737px]:text-4xl max-[400px]:text-3xl dark:text-white max-[737px]:dark:text-white max-[737px]:font-medium ">
                 Ankit Singh Mehra
               </h1>
-            </Fade>
 
-            <div className="mt-3 typing-text-home" id="typing-text-home">
+
+            <div className="mt-4 typing-text-home" id="typing-text-home">
               <p
-                className=" text-white  max-[737px]:text-xl  
-             bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg text-3xl"
+                className=" text-white bg-[#000000]  max-[737px]:text-xl  
+             rounded-lg text-3xl"
                 id="home-text-1"
               >
                 Front-End Developer
               </p>
               <p
-                className="text-white text-3xl max-[737px]:text-xl bg-gradient-to-r from-violet-500 to-zinc-400 rounded-lg"
+                className="text-white text-3xl max-[737px]:text-xl bg-[#000000] rounded-lg"
                 id="home-text-2"
               >
                 Full-Stack Developer
@@ -60,14 +59,15 @@ const Home = () => {
           {/* buttons */}
           <div className="buttons-home flex gap-4 max-[737px]:gap-6 max-[737px]:w-full ">
             <HashLink to={"#contactus"}>
-              {" "}
-              <button className="bg-gradient-to-r from-pink-300 via-purple-500 to-purple-800 p-3 rounded-lg px-10 text-white hover:from-pink-500 hover:to-yellow-500 max-[737px]:px-4 hover:scale-90 transition-all duration-500 ease-in-out">
+              <button className="bg-[#000000]  p-3 rounded-lg px-10 text-white 
+              max-[737px]:px-4 hover:scale-90 transition-all duration-500 ease-in-out dark:bg-[#FAF9F6] dark:text-black">
                 Contact me
               </button>
             </HashLink>
 
             <HashLink to={"#about"}>
-              <button className="border-2 border-purple-400 p-3 rounded-lg text-white font-normal px-10 hover:bg-gradient-to-r from-purple-500 to-pink-500 max-[737px]:px-4  hover:scale-90 transition-all duration-500 ease-in-out">
+              <button className="border-2 border-[#000000] dark:border-[#FAF9F6] p-3 rounded-lg text-[#000000] font-normal px-10
+               max-[737px]:px-4  hover:scale-90 transition-all duration-500 ease-in-out dark:text-[#FAF9F6]">
                 About me
               </button>
             </HashLink>
@@ -78,11 +78,11 @@ const Home = () => {
         <div className="right-portion-home w-1/2 relative max-[737px]:w-full max-[737px]:flex max-[737px]:justify-items-center max-[737px]:items-center max-[737px]:p-2 z-20">
           <div className="side-balls-1 rounded-full w-20 h-20  absolute -left-7 top-10 bg-gradient-to-r from-violet-600 to-red-400 max-[737px]:-top-2 max-[737px]:-left-3 max-[737px]:h-12 max-[737px]:w-12"></div>
 
-          <Bounce duration={2000}>
+
             <div className="img-div-home rounded-3xl overflow-hidden mt-20 z-30 h-11/12 w-10/12 max-[737px]:mt-0 max-[737px]:w-full relative shadow-sm shadow-black dark:shadow-white hover:scale-90 transition-all duration-500 ease-in-out cursor-pointer">
               <img src={img} alt="home-img" className="w-full h-full" />
             </div>
-          </Bounce>
+
         </div>
       </div>
       <About />

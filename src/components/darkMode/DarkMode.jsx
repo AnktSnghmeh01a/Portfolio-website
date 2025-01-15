@@ -19,6 +19,6 @@ export const DarkModeProvider = ({ children }) => {
 
 export const useDarkMode = () =>{
 
-  return useContext(DarkModeContext)
+  return useContext(DarkModeContext);
 
 }

@@ -16,7 +16,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className='fixed bg-gradient-to-r from-fuchsia-400 via-rose-500 to-pink-400 w-20 h-20 rounded-full pointer-events-none z-50 opacity-30 shadow-sm shadow-white  max-[900px]:hidden '
+      className='fixed bg-gradient-to-r from-fuchsia-400 via-rose-500 to-pink-400 w-10 h-10 rounded-full pointer-events-none z-50 opacity-30 shadow-sm shadow-white  max-[900px]:hidden '
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
